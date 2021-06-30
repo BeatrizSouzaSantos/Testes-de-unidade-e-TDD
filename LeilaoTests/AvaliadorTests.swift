@@ -33,7 +33,7 @@ class AvaliadorTests: XCTestCase {
         let jose = Usuario(nome: "Jose")
         let maria = Usuario(nome: "Maria")
         
-        let leilao = Leilao(descricao: "Playstation 4")
+        let leilao = Leilao(descricao: "Playstation 5")
         leilao.propoe(lance: Lance(maria, 250.0))
         leilao.propoe(lance: Lance(joao, 300.0))
         leilao.propoe(lance: Lance(jose, 400.0))
@@ -51,7 +51,7 @@ class AvaliadorTests: XCTestCase {
     
     func testDeveEntenderLeilaoComApenasUmLance() {
             let joao = Usuario(nome: "Joao")
-            let leilao = Leilao(descricao: "Playstation 4")
+            let leilao = Leilao(descricao: "Playstation 5")
             leilao.propoe(lance: Lance(joao, 1000.0))
 
             let leiloeiro = Avaliador()
